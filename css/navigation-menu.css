@@ -1,0 +1,19 @@
+.navigation-menu {
+    text-align: center;
+    margin-bottom: var(--space-smaller);
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Baloo Tammudu 2', cursive;
+    list-style: none;
+      }
+
+.navigation-menu a {
+    color: whitesmoke;
+    padding: var(--space-small);
+}
+
+.navigation-menu a:hover {
+    color: whitesmoke;
+    text-decoration: underline dotted whitesmoke;
+} 
+

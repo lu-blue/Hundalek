@@ -1,0 +1,19 @@
+
+.footer-icons {
+    text-align: center;
+    margin-bottom: var(--space-small);
+    font-size: 40px;
+}
+
+.footer-icons a {
+    color: whitesmoke;
+    padding: var(--space-smaller);
+}
+
+.footer-icons a:hover {
+    background-color: #553914;
+    color: --color-light-grey;
+    box-sizing:border-box;
+    border-radius: 20%;
+    border: solid 2px;
+}

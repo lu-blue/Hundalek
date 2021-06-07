@@ -1,0 +1,17 @@
+.logotype {
+    max-width: 100px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: var(--space-smaller);
+    margin-top: var(--space-medium);
+    
+}  
+
+ .logotype img {
+        border-radius: 15px;
+}
+
+
+   

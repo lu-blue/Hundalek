@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&family=Josefin+Sans:wght@100&family=Sigmar+One&display=swap');
+
+/* Shared styles of HTML tags */
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--space-medium);
+    background: url("../images/background-pic.jpg") no-repeat center fixed;
+    background-size: cover;
+    
+}
+
+
+h1, h2, h3 {
+    font-weight: 600;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 0;
+    font-family:  'Josefin Sans', sans-serif;
+    color: red;
+    text-align: center;
+    
+}
+
+h2 {
+    font-size: 20px;  
+    margin-bottom: var(--space-medium);
+    color: whitesmoke;
+    font-family:  'Sigmar One', cursive; 
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: var(--space-smaller);
+    font-family: 'Baloo Tammudu 2', cursive;
+    
+    
+}
+
+p {
+    margin-top: 0;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+hr {
+    border-bottom-color:whitesmoke;
+    margin-bottom: var(--space-medium);
+    border-style: ridge;  
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+  }
+
+  ul { list-style: none;
+}
+ 
+
+  
+
+

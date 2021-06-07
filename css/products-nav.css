@@ -1,0 +1,21 @@
+.products-nav {
+    text-align: center;
+    margin-bottom: var(--space-smaller);
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Baloo Tammudu 2', cursive;
+    list-style: none;
+   }
+
+.products-nav a {
+    color: whitesmoke;
+    padding: var(--space-small);
+}
+
+.products-nav a:hover {
+    background-color: #553914;
+    color: whitesmoke;
+    box-sizing:content-box;
+    border-radius: 50%;
+    border: none;
+}
