@@ -1,66 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hundalek varukorg</title>
 
     <!-- Custom CSS -->
     <link href="./css/style.css" rel="stylesheet" />
 
+    <!-- Chatbot CSS -->
+    <style>
+      df-messenger {
+        --df-messenger-bot-message: #878fac;
+        --df-messenger-button-titlebar-color: red;
+        --df-messenger-chat-background-color: #fafafa;
+        --df-messenger-font-color: white;
+        --df-messenger-send-icon: red;
+        --df-messenger-user-message: #adc563;
+      }
+    </style>
+
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&family=Josefin+Sans:wght@100&family=Sigmar+One&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&family=Josefin+Sans:wght@100&family=Sigmar+One&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font awesome -->
     <script
-      src="https://kit.fontawesome.com/86134dd369.js"
+      src="https://kit.fontawesome.com/9f4452dcd1.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <!-- Upper logotype -->
+      <div class="logotype">
+        <a href="./index.html">
+          <img src="./images/logo1.jpg" alt="Logo with a dog in the mouth" />
+        </a>
+      </div>
 
-  <header>
+      <br />
 
-    <!-- Upper logotype -->
-    <div class="logotype">
-     <a href="./index.html">
-     <img src="./images/logo1.jpg" alt="Logo with a dog in the mouth"/>
-   </a>
-     </div>  
- 
-     <br />
-   
-   <!-- Navigation menu -->
-   <nav class="navigation-menu">
-     <a href="./index.html">Hem</a>
-     <a href="./varukorg.html">Varukorg</a>
-           </nav>
- 
-           <hr />
- 
+      <!-- Navigation menu -->
+      <nav class="navigation-menu">
+        <a href="./index.html">Hem</a>
+        <a href="./varukorg.html">Varukorg</a>
+      </nav>
 
-          <div class="text">
-            <h1>Din varukorg är tom</h1>
-          </div>
+      <hr />
 
-          <hr />
-        
-  
-        </header>
+      <div class="text">
+        <h1>Din varukorg är tom</h1>
+      </div>
 
+      <hr />
+    </header>
 
+    <footer class="footer-icons">
+      <a href="https://www.instagram.com/picadogs/">
+        <i class="fab fa-instagram-square"></i
+      ></a>
+      <a href="https://sv-se.facebook.com/groups/dogspotting/">
+        <i class="fab fa-facebook-square"></i
+      ></a>
+      <a href="mailto:lubov.novozhilova@gmail.com">
+        <i class="fas fa-envelope-square"></i
+      ></a>
+    </footer>
 
-          <footer class="footer-icons">
-
-            <a href="https://www.instagram.com/picadogs/">
-                <i class="fab fa-instagram-square"></i></a>
-            <a href="https://sv-se.facebook.com/groups/dogspotting/">
-                    <i class="fab fa-facebook-square"></i></a> 
-            <a href="mailto:lubov.novozhilova@gmail.com">
-                <i class="fas fa-envelope-square"></i></a>
-               
-          </footer>
-            
-        </body>
-        </html>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      chat-icon="https://i.ibb.co/Bt0RWBb/Puppy-Bot.png"
+      intent="WELCOME"
+      chat-title="Lessy"
+      agent-id="c95e6ab4-a15f-474b-bda3-078fcccd58df"
+      language-code="sv"
+    ></df-messenger>
+  </body>
+</html>

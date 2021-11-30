@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hundalek</title>
 
     <!-- Custom CSS -->
     <link href="./css/style.css" rel="stylesheet" />
 
+    <!-- Chatbot CSS -->
+    <style>
+      df-messenger {
+        --df-messenger-bot-message: #878fac;
+        --df-messenger-button-titlebar-color: red;
+        --df-messenger-chat-background-color: #fafafa;
+        --df-messenger-font-color: white;
+        --df-messenger-send-icon: red;
+        --df-messenger-user-message: #adc563;
+      }
+    </style>
+
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&family=Josefin+Sans:wght@100&family=Sigmar+One&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&family=Josefin+Sans:wght@100&family=Sigmar+One&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font awesome -->
     <script
-      src="https://kit.fontawesome.com/86134dd369.js"
+      src="https://kit.fontawesome.com/9f4452dcd1.js"
       crossorigin="anonymous"
     ></script>
 
@@ -22,318 +37,348 @@
       function KorgFunction() {
         alert("Artikeln läggs till!");
       }
-      </script>
+    </script>
 
-<script>
-  function GillaFunction() {
-    alert("Tack!");
-  }
-  </script>
+    <script>
+      function GillaFunction() {
+        alert("Tack!");
+      }
+    </script>
 
-  <!-- For go to top button -->
+    <!-- For go to top button -->
 
-<script>
-  //Get the button
-  var mybutton = document.getElementById("myBtn");
-  
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
-  
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-  </script>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
 
-</head>
-<body>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-  <header>
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
 
-    <!-- Upper logotype -->
-    <div class="logotype">
-     <a href="./index.html">
-     <img src="./images/logo1.jpg" alt="Logo with a dog in the mouth"/>
-   </a>
-     </div>  
- 
-     <br />
-   
-   <!-- Navigation menu -->
-   <nav class="navigation-menu">
-     <a href="./index.html">Hem</a>
-     <a href="./varukorg.html">Varukorg</a>
-           </nav>
- 
-           <hr />
- 
-       
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <!-- Upper logotype -->
+      <div class="logotype">
+        <a href="./index.html">
+          <img src="./images/logo1.jpg" alt="Logo with a dog in the mouth" />
+        </a>
+      </div>
 
-        
-       
-        <div class="products-nav">
-   
-        <h1><a href="#mjukisdjur">Mjukisdjur</a>
-        <a href="#aktivitetslek">Aktivitetslek</a>
-        <a href="#rep-och-tug">Rep&Tug</a>
-        <a href="#utomhuslek">Utomhuslek</a></h1>
-        </div>
+      <br />
 
-        <br />
+      <!-- Navigation menu -->
+      <nav class="navigation-menu">
+        <a href="./index.html">Hem</a>
+        <a href="./varukorg.html">Varukorg</a>
+      </nav>
 
-        <div class="text">
-          <h1>Välj bland extra tåliga, stimulerande och gulliga leksaker för din hund</h1>
-        </div>
+      <div class="products-nav">
+        <h1>
+          <a href="#mjukisdjur">Mjukisdjur</a>
+          <a href="#aktivitetslek">Aktivitetslek</a>
+          <a href="#rep-och-tug">Rep&Tug</a>
+          <a href="#utomhuslek">Utomhuslek</a>
+        </h1>
+      </div>
 
-      </header>
-      
-  
-       
-      <section class="content mjuk">
-        <h2>
-          <span id="mjukisdjur">&nbsp;</span> 
-          Mjukisdjur
-        </h2> 
-  
-        <div class="grid">
+      <br />
 
-          <article class="lek-item">
-            <img src="./images/mjuk/ankan.jpg" alt="Ankan hundleksak" />
-            <h3>Ankan Arne</h3>
-            <p>119 kr</p>
-            <div class="container"> 
-              <button class="btn btn1" onclick="KorgFunction()">Lägg i varukorgen</button>
-              <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
-          </div> 
-          </article>
-         
-          <article class="lek-item">
-            <img src="./images/mjuk/dino.jpg" alt="Dino hundleksak" />
-            <h3>Plush Friendz Dino</h3>
-            <p>59 kr</p>
-            <div class="container"> 
-              <button class="btn btn1" onclick="KorgFunction()">Lägg i varukorgen</button>
-              <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
-          </div> 
-          </article>
+      <div class="text">
+        <h1>
+          Välj bland extra tåliga, stimulerande och gulliga leksaker för din
+          hund
+        </h1>
+      </div>
+    </header>
 
-          <article class="lek-item">
-            <img src="./images/mjuk/morot-hundleksak.jpg" alt="Hundleksak som morotter" />
-            <h3>Morot Hundleksak</h3>
-            <p>99 kr</p>
-            <div class="container"> 
-              <button class="btn btn1" onclick="KorgFunction()">Lägg i varukorgen</button>
-              <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
-          </div> 
-          </article>
-  
-         
-  
-          <article class="lek-item">
-            <img
-              src="./images/mjuk/Raccoon.jpg"
-              alt="Raccoon Hundleksak"
-            />
-            <h3>Gigwi Raccoon</h3>
-            <p>56 kr </p>
-            <div class="container"> 
-              <button class="btn btn1" onclick="KorgFunction()">Lägg i varukorgen</button>
-              <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
-          </div> 
-              </article>
+    <section class="content mjuk">
+      <h2>
+        <span id="mjukisdjur">&nbsp;</span>
+        Mjukisdjur
+      </h2>
 
-            </div>
-          </section>
+      <div class="grid">
+        <article class="lek-item">
+          <img src="./images/mjuk/ankan.jpg" alt="Ankan hundleksak" />
+          <h3>Ankan Arne</h3>
+          <p>119 kr</p>
+          <div class="container">
+            <button class="btn btn1" onclick="KorgFunction()">
+              Lägg i varukorgen
+            </button>
+            <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
+          </div>
+        </article>
 
-          <!-- <hr /> -->
-        
+        <article class="lek-item">
+          <img src="./images/mjuk/dino.jpg" alt="Dino hundleksak" />
+          <h3>Plush Friendz Dino</h3>
+          <p>59 kr</p>
+          <div class="container">
+            <button class="btn btn1" onclick="KorgFunction()">
+              Lägg i varukorgen
+            </button>
+            <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
+          </div>
+        </article>
 
-          <section class="content aktivitet">
-            <h2>
-              <span id="aktivitetslek">&nbsp;</span>
-              Aktivitetslek
-            </h2>
-      
-            <div class="grid">
+        <article class="lek-item">
+          <img
+            src="./images/mjuk/morot-hundleksak.jpg"
+            alt="Hundleksak som morotter"
+          />
+          <h3>Morot Hundleksak</h3>
+          <p>99 kr</p>
+          <div class="container">
+            <button class="btn btn1" onclick="KorgFunction()">
+              Lägg i varukorgen
+            </button>
+            <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
+          </div>
+        </article>
 
-          <article class="lek-item">
-            <img src="./images/aktivitet/dog-tornado.jpg" alt="Aktivitetsleksak som tornado" />
-            <h3>Dog Tornado</h3>
-            <p>255 kr</p>
-            <div class="container"> 
-              <button class="btn btn1" onclick="KorgFunction()">Lägg i varukorgen</button>
-              <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
-          </div> 
-             </article>
+        <article class="lek-item">
+          <img src="./images/mjuk/Raccoon.jpg" alt="Raccoon Hundleksak" />
+          <h3>Gigwi Raccoon</h3>
+          <p>56 kr</p>
+          <div class="container">
+            <button class="btn btn1" onclick="KorgFunction()">
+              Lägg i varukorgen
+            </button>
+            <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<article class="lek-item">
-  <img src="./images/aktivitet/snack-popper.jpg" alt="Aktivitetsleksak som poppar hundgodis" />
-  <h3>Snack Popper</h3>
-  <p>350 kr </p>
-  <div class="container"> 
-    <button class="btn btn1" onclick="KorgFunction()">Lägg i varukorgen</button>
-    <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
-</div> 
-  </article>
+    <!-- <hr /> -->
 
+    <section class="content aktivitet">
+      <h2>
+        <span id="aktivitetslek">&nbsp;</span>
+        Aktivitetslek
+      </h2>
 
-<article class="lek-item">
-  <img src="./images/aktivitet/challenge-slider.jpg" alt="Aktivitetsleksak som challenge" />
-  <h3>Challenge Slider</h3>
-  <p>299 kr </p>
-  <div class="container"> 
-    <button class="btn btn1" onclick="KorgFunction()">Lägg i varukorgen</button>
-    <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
-</div> 
-</article>
+      <div class="grid">
+        <article class="lek-item">
+          <img
+            src="./images/aktivitet/dog-tornado.jpg"
+            alt="Aktivitetsleksak som tornado"
+          />
+          <h3>Dog Tornado</h3>
+          <p>255 kr</p>
+          <div class="container">
+            <button class="btn btn1" onclick="KorgFunction()">
+              Lägg i varukorgen
+            </button>
+            <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
+          </div>
+        </article>
 
-<article class="lek-item">
-  <img src="./images/aktivitet/gambling-tower.jpg" alt="Aktivitetsleksak som tower " />
-  <h3>Gambling Tower</h3>
-  <p>370 kr</p>
-  <div class="container"> 
-    <button class="btn btn1" onclick="KorgFunction()">Lägg i varukorgen</button>
-              <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
-</div> 
-</article>
+        <article class="lek-item">
+          <img
+            src="./images/aktivitet/snack-popper.jpg"
+            alt="Aktivitetsleksak som poppar hundgodis"
+          />
+          <h3>Snack Popper</h3>
+          <p>350 kr</p>
+          <div class="container">
+            <button class="btn btn1" onclick="KorgFunction()">
+              Lägg i varukorgen
+            </button>
+            <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
+          </div>
+        </article>
 
-  </div>
-      </section>
-      
-      <!-- <hr /> -->
-      
+        <article class="lek-item">
+          <img
+            src="./images/aktivitet/challenge-slider.jpg"
+            alt="Aktivitetsleksak som challenge"
+          />
+          <h3>Challenge Slider</h3>
+          <p>299 kr</p>
+          <div class="container">
+            <button class="btn btn1" onclick="KorgFunction()">
+              Lägg i varukorgen
+            </button>
+            <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
+          </div>
+        </article>
 
-   
-      <section class="content tug">
-        <h2>
-          <span id="rep-och-tug">&nbsp;</span>
-          Rep och tug
-        </h2>
-  
-        <div class="grid">
-      
-          <article class="lek-item">
-            <img src="./images/tug/dogman-repleksak.jpg" alt="Bollen från rep" />
-            <h3>Repleksak Dogman</h3>
-            <p>69 kr</p>
-            <div class="container"> 
-              <button class="btn btn1" onclick="KorgFunction()">Lägg i varukorgen</button>
-              <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
-          </div> 
-          </article>
+        <article class="lek-item">
+          <img
+            src="./images/aktivitet/gambling-tower.jpg"
+            alt="Aktivitetsleksak som tower "
+          />
+          <h3>Gambling Tower</h3>
+          <p>370 kr</p>
+          <div class="container">
+            <button class="btn btn1" onclick="KorgFunction()">
+              Lägg i varukorgen
+            </button>
+            <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
+          </div>
+        </article>
+      </div>
+    </section>
 
-          <article class="lek-item">
-            <img src="./images/tug/sofie-hundleksak.jpg" alt="Bollen och rep" />
-            <h3>Sofies boll</h3>
-            <p> 39 kr</p>
-            <div class="container"> 
-              <button class="btn btn1" onclick="KorgFunction()">Lägg i varukorgen</button>
-              <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
-          </div> 
-         </article>
-  
-          <article class="lek-item">
-            <img src="./images/tug/bomullsrep.jpg" alt="Färgeglad bomullsrep" />
-            <h3>Bomullsrep</h3>
-            <p>42 kr </p>
-            <div class="container"> 
-              <button class="btn btn1" onclick="KorgFunction()">Lägg i varukorgen</button>
-              <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
-          </div> 
-          </article>
+    <section class="content tug">
+      <h2>
+        <span id="rep-och-tug">&nbsp;</span>
+        Rep och tug
+      </h2>
 
-          <article class="lek-item">
-            <img
-              src="./images/tug/rep-med-boll.jpg" alt="Bollen med rep gul"/>
-            <h3>Rep och boll</h3>
-            <p> 37 kr </p>
-            <div class="container"> 
-              <button class="btn btn1" onclick="KorgFunction()">Lägg i varukorgen</button>
-              <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
-          </div> 
-          </article>
+      <div class="grid">
+        <article class="lek-item">
+          <img src="./images/tug/dogman-repleksak.jpg" alt="Bollen från rep" />
+          <h3>Repleksak Dogman</h3>
+          <p>69 kr</p>
+          <div class="container">
+            <button class="btn btn1" onclick="KorgFunction()">
+              Lägg i varukorgen
+            </button>
+            <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
+          </div>
+        </article>
 
-        </div>
-      </section>
-      
-      <!-- <hr />  -->
+        <article class="lek-item">
+          <img src="./images/tug/sofie-hundleksak.jpg" alt="Bollen och rep" />
+          <h3>Sofies boll</h3>
+          <p>39 kr</p>
+          <div class="container">
+            <button class="btn btn1" onclick="KorgFunction()">
+              Lägg i varukorgen
+            </button>
+            <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
+          </div>
+        </article>
 
-          <section class="content utomhus">
-            <h2>
-              <span id="utomhuslek">&nbsp;</span>
-              Utomhuslek
-            </h2>
-      
-            <div class="grid">
-  
-          <article class="lek-item">
-            <img src="./images/utomhus/dogman-flytande.jpg" alt="Flytande disk" />
-            <h3>Flytande leksak</h3>
-            <p>38 kr</p>
-            <div class="container"> 
-              <button class="btn btn1" onclick="KorgFunction()">Lägg i varukorgen</button>
-              <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
-          </div> 
-          </article>
+        <article class="lek-item">
+          <img src="./images/tug/bomullsrep.jpg" alt="Färgeglad bomullsrep" />
+          <h3>Bomullsrep</h3>
+          <p>42 kr</p>
+          <div class="container">
+            <button class="btn btn1" onclick="KorgFunction()">
+              Lägg i varukorgen
+            </button>
+            <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
+          </div>
+        </article>
 
-<article class="lek-item">
-  <img src="./images/utomhus/ozami-hundpool.jpg" alt="Hundpool" />
-  <h3>Ozami Hundpool</h3>
-  <p>474 kr</p>
-  <div class="container"> 
-    <button class="btn btn1" onclick="KorgFunction()">Lägg i varukorgen</button>
-              <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
-</div> 
-</article>
+        <article class="lek-item">
+          <img src="./images/tug/rep-med-boll.jpg" alt="Bollen med rep gul" />
+          <h3>Rep och boll</h3>
+          <p>37 kr</p>
+          <div class="container">
+            <button class="btn btn1" onclick="KorgFunction()">
+              Lägg i varukorgen
+            </button>
+            <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<article class="lek-item">
-  <img src="./images/utomhus/boll-kastare.jpg" alt="Kastare och bollen" />
-  <h3>Boll Kastare</h3>
-  <p>51 kr</p>
-  <div class="container"> 
-    <button class="btn btn1" onclick="KorgFunction()">Lägg i varukorgen</button>
-    <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
-</div> 
-</article>
+    <section class="content utomhus">
+      <h2>
+        <span id="utomhuslek">&nbsp;</span>
+        Utomhuslek
+      </h2>
 
-<article class="lek-item">
-  <img src="./images/utomhus/kong-flexboll.jpg" alt="Gummiboll" />
-  <h3>Kong Flexboll</h3>
-  <p>47 kr</p>
-  <div class="container"> 
-    <button class="btn btn1" onclick="KorgFunction()">Lägg i varukorgen</button>
-    <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
-</div> 
-</article>
+      <div class="grid">
+        <article class="lek-item">
+          <img src="./images/utomhus/dogman-flytande.jpg" alt="Flytande disk" />
+          <h3>Flytande leksak</h3>
+          <p>38 kr</p>
+          <div class="container">
+            <button class="btn btn1" onclick="KorgFunction()">
+              Lägg i varukorgen
+            </button>
+            <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
+          </div>
+        </article>
 
- </div>
-</section>
-  
-      <hr />
+        <article class="lek-item">
+          <img src="./images/utomhus/ozami-hundpool.jpg" alt="Hundpool" />
+          <h3>Ozami Hundpool</h3>
+          <p>474 kr</p>
+          <div class="container">
+            <button class="btn btn1" onclick="KorgFunction()">
+              Lägg i varukorgen
+            </button>
+            <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
+          </div>
+        </article>
 
-  <footer class="footer-icons">
+        <article class="lek-item">
+          <img
+            src="./images/utomhus/boll-kastare.jpg"
+            alt="Kastare och bollen"
+          />
+          <h3>Boll Kastare</h3>
+          <p>51 kr</p>
+          <div class="container">
+            <button class="btn btn1" onclick="KorgFunction()">
+              Lägg i varukorgen
+            </button>
+            <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
+          </div>
+        </article>
 
-    <a href="https://www.instagram.com/picadogs/">
-        <i class="fab fa-instagram-square"></i></a>
-    <a href="https://sv-se.facebook.com/groups/dogspotting/">
-            <i class="fab fa-facebook-square"></i></a> 
-    <a href="mailto:lubov.novozhilova@gmail.com">
-        <i class="fas fa-envelope-square"></i></a>
-       
-  </footer>
+        <article class="lek-item">
+          <img src="./images/utomhus/kong-flexboll.jpg" alt="Gummiboll" />
+          <h3>Kong Flexboll</h3>
+          <p>47 kr</p>
+          <div class="container">
+            <button class="btn btn1" onclick="KorgFunction()">
+              Lägg i varukorgen
+            </button>
+            <button class="btn btn2" onclick="GillaFunction()">Gilla</button>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <button class="myBtn" onclick="topFunction()"> Gå upp</button> 
+    <footer class="footer-icons">
+      <a href="https://www.instagram.com/picadogs/">
+        <i class="fab fa-instagram-square"></i
+      ></a>
+      <a href="https://sv-se.facebook.com/groups/dogspotting/">
+        <i class="fab fa-facebook-square"></i
+      ></a>
+      <a href="mailto:lubov.novozhilova@gmail.com">
+        <i class="fas fa-envelope-square"></i
+      ></a>
+    </footer>
 
- 
-    
-</body>
+    <button class="myBtn" onclick="topFunction()">Gå upp</button>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      chat-icon="https://i.ibb.co/Bt0RWBb/Puppy-Bot.png"
+      intent="WELCOME"
+      chat-title="Lessybot"
+      agent-id="c95e6ab4-a15f-474b-bda3-078fcccd58df"
+      language-code="sv"
+    ></df-messenger>
+  </body>
 </html>
